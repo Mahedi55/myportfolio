@@ -2,207 +2,364 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/publications.css">
+  <link rel="stylesheet" href="../assets/css/fontawesome651.all.min.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/publications.css">
-    <link rel="stylesheet" href="../assets/css/fontawesome651.all.min.css">
-
-    <!-- Google Fonts CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
-        rel="stylesheet">
-
+  <!-- Google Fonts CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <div id="page-container">
+    <header-component></header-component>
+    <div class="container mt-4 text-justify">
+      <h5><b>__ Publications ________________</b></h5>
 
+      <!-- Journal Articles Section -->
+      <h4 class="mt-4">Journal Articles</h4>
+      <div class="articles-card p-3">
+        <ol class="pl-3">
+          <li class="pl-2 text-left">
+            <span class="ref-journal">[Journal of Digital Health] </span>
+            A. H. Emon, N. Jahan, <span class="ref-author-lemos">MAHEDI HASAN</span>, F. A. Jibon, S. Mohammad, and A. H. M. Kamal.
+            <span><a href="https://doi.org/10.1177/DHJ-26-3135" target="_blank">"A Reproducible Comet-Assay Pipeline: Segmentation, Morphometrics, and Binary Grading with Auditable Ablations".</a></span>
+            <i>Journal of Digital Health</i> (Accepted), manuscript id: DHJ-26-3135, 2026.
+            <p class="mt-2">
+              <button type="button" class="btn btn-blue btn-sm"><a href="#" target="_blank">PDF <i class="ml-1 fa-regular fa-file-pdf"></i></a></button>
+              <button class="ml-1 btn btn-blue btn-sm" type="button" data-toggle="collapse" data-target="#collapseBibtex-j-1" aria-expanded="false" aria-controls="collapseBibtex-j-1">
+                BibTeX <i class="ml-1 fa-solid fa-quote-right"></i>
+              </button>
+              <div id="collapseBibtex-j-1" class="collapse mt-2 mb-0 bibtex-card position-relative">
+                <button class="btn btn-sm position-absolute bibtex-copy-btn py-0" onclick="copyBibtex('bibtex-j-1')">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+                <pre id="bibtex-j-1" class="p-3 mb-0 text-left">
+@article{emon2026comet,
+  author    = {Emon, A. H. and Jahan, N. and Hasan, Mahedi and Jibon, F. A. and Mohammad, S. and Kamal, A. H. M.},
+  title     = {A Reproducible Comet-Assay Pipeline: Segmentation, Morphometrics, and Binary Grading with Auditable Ablations},
+  journal   = {Journal of Digital Health},
+  year      = {2026},
+  note      = {Accepted, Manuscript ID: DHJ-26-3135}
+}</pre>
+              </div>
+            </p>
+          </li>
+        </ol>
+      </div>
 
+      <!-- Peer Reviewed Conference Papers Section -->
+      <h4 class="mt-5">Peer-Reviewed Conference Papers</h4>
+      <div class="articles-card p-3">
+        <ol class="pl-3">
+          <!-- C1 -->
+          <li class="pl-2 text-left mb-3">
+            <span class="ref-journal">[IEEE ECCE] </span>
+            <span class="ref-author-lemos">MAHEDI HASAN</span>, J. A. Nabin, N. Mia, F. S. Tamim, S. Mohammad, and D. M. Das.
+            <span><a href="https://doi.org/10.1109/ECCE64574.2025.11013374" target="_blank">"Two-Stage Vision Transformer-Based Framework for Anomaly Detection and Classification in Surveillance Videos".</a></span>
+            <i>Proceedings of the 2025 International Conference on Electrical, Computer and Communication Engineering (ECCE)</i>, Chittagong, Bangladesh, 2025, pp. 1–6. DOI: 10.1109/ECCE64574.2025.11013374
+            <p class="mt-2">
+              <button type="button" class="btn btn-blue btn-sm"><a href="https://doi.org/10.1109/ECCE64574.2025.11013374" target="_blank">IEEE Xplore <i class="ml-1 fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="ml-1 btn btn-blue btn-sm" type="button" data-toggle="collapse" data-target="#collapseBibtex-c-1" aria-expanded="false">
+                BibTeX <i class="ml-1 fa-solid fa-quote-right"></i>
+              </button>
+              <div id="collapseBibtex-c-1" class="collapse mt-2 mb-0 bibtex-card position-relative">
+                <button class="btn btn-sm position-absolute bibtex-copy-btn py-0" onclick="copyBibtex('bibtex-c-1')">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+                <pre id="bibtex-c-1" class="p-3 mb-0 text-left">
+@inproceedings{hasan2025twostage,
+  author    = {Hasan, Mahedi and Nabin, J. A. and Mia, N. and Tamim, F. S. and Mohammad, S. and Das, D. M.},
+  title     = {Two-Stage Vision Transformer-Based Framework for Anomaly Detection and Classification in Surveillance Videos},
+  booktitle = {Proceedings of the 2025 International Conference on Electrical, Computer and Communication Engineering (ECCE)},
+  year      = {2025},
+  pages     = {1--6},
+  doi       = {10.1109/ECCE64574.2025.11013374}
+}</pre>
+              </div>
+            </p>
+          </li>
 
-    <div id="page-container">
-        <header-component></header-component>
-        <div class="container mt-4 text-justify">
-            <h5><b>__ Publications ________________</b></h5>
+          <!-- C2 -->
+          <li class="pl-2 text-left mb-3">
+            <span class="ref-journal">[IEEE QPAIN] </span>
+            <span class="ref-author-lemos">MAHEDI HASAN</span>, K. N. Hasan, F. S. Tamim, M. S. Arefin, and A. W. Reza.
+            <span><a href="https://doi.org/10.1109/QPAIN66474.2025.11172003" target="_blank">"Generative Adversarial Networks for Transaction Anomaly Detection: A Synthetic Data Approach".</a></span>
+            <i>Proceedings of the 2025 International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN)</i>, Rangpur, Bangladesh, 2025, pp. 1–6. DOI: 10.1109/QPAIN66474.2025.11172003
+            <p class="mt-2">
+              <button type="button" class="btn btn-blue btn-sm"><a href="https://doi.org/10.1109/QPAIN66474.2025.11172003" target="_blank">IEEE Xplore <i class="ml-1 fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="ml-1 btn btn-blue btn-sm" type="button" data-toggle="collapse" data-target="#collapseBibtex-c-2" aria-expanded="false">
+                BibTeX <i class="ml-1 fa-solid fa-quote-right"></i>
+              </button>
+              <div id="collapseBibtex-c-2" class="collapse mt-2 mb-0 bibtex-card position-relative">
+                <button class="btn btn-sm position-absolute bibtex-copy-btn py-0" onclick="copyBibtex('bibtex-c-2')">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+                <pre id="bibtex-c-2" class="p-3 mb-0 text-left">
+@inproceedings{hasan2025gan,
+  author    = {Hasan, Mahedi and Hasan, K. N. and Tamim, F. S. and Arefin, M. S. and Reza, A. W.},
+  title     = {Generative Adversarial Networks for Transaction Anomaly Detection: A Synthetic Data Approach},
+  booktitle = {Proceedings of the 2025 International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN)},
+  year      = {2025},
+  pages     = {1--6},
+  doi       = {10.1109/QPAIN66474.2025.11172003}
+}</pre>
+              </div>
+            </p>
+          </li>
 
-            <!-- style : Chicago -->
-            <h4 class="mt-4">Book Chapters</h4>
-            <div class="articles-card p-3">
-                <ol class="pl-3">
-                    <li class="pl-2"><span class="ref-journal">[Publisher] </span><span class="ref-author-lemos">Your
-                            Name</span>, Author_2, Author_3, and Author_4.
-                        <span><a href="" target=”_blank”>"Paper Title".</a></span> Venue and other Details. DOI:
-                        10.100x/xxx-xx-xx-xx<span class="pr-2"></span>
-                        <p>
-                        <button type="button" class="btn btn-blue btn-sm"><a href="" target="_blank">PDF <i
-                                    class="ml-1 fa-regular fa-file-pdf"></i></a> </button>
+          <!-- C3 -->
+          <li class="pl-2 text-left mb-3">
+            <span class="ref-journal">[IEEE QPAIN] </span>
+            <span class="ref-author-lemos">MAHEDI HASAN</span> et al.
+            <span><a href="https://doi.org/10.1109/QPAIN66474.2025.11171658" target="_blank">"Enhancing Face-to-Emotion Recognition with Vision Transformer and Human-in-the-Loop Approach".</a></span>
+            <i>Proceedings of the 2025 International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN)</i>, Rangpur, Bangladesh, 2025, pp. 1–6. DOI: 10.1109/QPAIN66474.2025.11171658
+            <p class="mt-2">
+              <button type="button" class="btn btn-blue btn-sm"><a href="https://doi.org/10.1109/QPAIN66474.2025.11171658" target="_blank">IEEE Xplore <i class="ml-1 fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="ml-1 btn btn-blue btn-sm" type="button" data-toggle="collapse" data-target="#collapseBibtex-c-3" aria-expanded="false">
+                BibTeX <i class="ml-1 fa-solid fa-quote-right"></i>
+              </button>
+              <div id="collapseBibtex-c-3" class="collapse mt-2 mb-0 bibtex-card position-relative">
+                <button class="btn btn-sm position-absolute bibtex-copy-btn py-0" onclick="copyBibtex('bibtex-c-3')">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+                <pre id="bibtex-c-3" class="p-3 mb-0 text-left">
+@inproceedings{hasan2025emotion,
+  author    = {Hasan, Mahedi and others},
+  title     = {Enhancing Face-to-Emotion Recognition with Vision Transformer and Human-in-the-Loop Approach},
+  booktitle = {Proceedings of the 2025 International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN)},
+  year      = {2025},
+  pages     = {1--6},
+  doi       = {10.1109/QPAIN66474.2025.11171658}
+}</pre>
+              </div>
+            </p>
+          </li>
 
-                                                  <!-- BibTeX toggle button -->
-                          <button class="ml-1 btn btn-blue btn-sm" type="button" data-toggle="collapse"
-                                  data-target="#collapseBibtex-bc-1" aria-expanded="false" aria-controls="collapseBibtex-1">
-                            BibTeX <i class="ml-1 fa-solid fa-quote-right"></i>
-                          </button>
+          <!-- C4 -->
+          <li class="pl-2 text-left mb-3">
+            <span class="ref-journal">[IEEE ICCIT] </span>
+            J. Khatun, N. S. Arnika, M. N. Ahmed, F. S. Tamim, <span class="ref-author-lemos">MAHEDI HASAN</span>, and K. Islam.
+            <span><a href="https://doi.org/10.1109/ICCIT68739.2025.11490332" target="_blank">"CLIP–Longformer Fusion for Multimodal Bengali Meme Understanding: Dataset Development and Benchmarking".</a></span>
+            <i>Proceedings of the 28th International Conference on Computer and Information Technology (ICCIT)</i>, Cox’s Bazar, Bangladesh, 2025, pp. 3675–3680. DOI: 10.1109/ICCIT68739.2025.11490332
+            <p class="mt-2">
+              <button type="button" class="btn btn-blue btn-sm"><a href="https://doi.org/10.1109/ICCIT68739.2025.11490332" target="_blank">IEEE Xplore <i class="ml-1 fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="ml-1 btn btn-blue btn-sm" type="button" data-toggle="collapse" data-target="#collapseBibtex-c-4" aria-expanded="false">
+                BibTeX <i class="ml-1 fa-solid fa-quote-right"></i>
+              </button>
+              <div id="collapseBibtex-c-4" class="collapse mt-2 mb-0 bibtex-card position-relative">
+                <button class="btn btn-sm position-absolute bibtex-copy-btn py-0" onclick="copyBibtex('bibtex-c-4')">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+                <pre id="bibtex-c-4" class="p-3 mb-0 text-left">
+@inproceedings{khatun2025clip,
+  author    = {Khatun, J. and Arnika, N. S. and Ahmed, M. N. and Tamim, F. S. and Hasan, Mahedi and Islam, K.},
+  title     = {CLIP–Longformer Fusion for Multimodal Bengali Meme Understanding: Dataset Development and Benchmarking},
+  booktitle = {Proceedings of the 28th International Conference on Computer and Information Technology (ICCIT)},
+  year      = {2025},
+  pages     = {3675--3680},
+  doi       = {10.1109/ICCIT68739.2025.11490332}
+}</pre>
+              </div>
+            </p>
+          </li>
 
-                        <!-- BibTeX card -->
-                        <div id="collapseBibtex-bc-1" class="collapse mt-2 mb-0 bibtex-card position-relative">                          
-                          <!-- Copy button (top right) -->
-                          <button class="btn btn-sm position-absolute bibtex-copy-btn py-0" onclick="copyBibtex('bibtex-bc-1')">
-                            <i class="fa-regular fa-copy"></i>
-                          </button>
+          <!-- C5 -->
+          <li class="pl-2 text-left mb-3">
+            <span class="ref-journal">[IEEE ICAECA] </span>
+            N. Mia, J. A. Nabin, S. Mohammad, <span class="ref-author-lemos">MAHEDI HASAN</span>, F. S. Tamim, and D. Mohon Das.
+            <span><a href="https://doi.org/10.1109/ICAECA63854.2025.11012607" target="_blank">"Federated Deep Learning for Cybersecurity and Intrusion Detection in Decentralized Networks".</a></span>
+            <i>Proceedings of the 2025 3rd International Conference on Advancements in Electrical, Electronics, Communication, Computing and Automation (ICAECA)</i>, Coimbatore, India, 2025, pp. 1–6. DOI: 10.1109/ICAECA63854.2025.11012607
+            <p class="mt-2">
+              <button type="button" class="btn btn-blue btn-sm"><a href="https://doi.org/10.1109/ICAECA63854.2025.11012607" target="_blank">IEEE Xplore <i class="ml-1 fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="ml-1 btn btn-blue btn-sm" type="button" data-toggle="collapse" data-target="#collapseBibtex-c-5" aria-expanded="false">
+                BibTeX <i class="ml-1 fa-solid fa-quote-right"></i>
+              </button>
+              <div id="collapseBibtex-c-5" class="collapse mt-2 mb-0 bibtex-card position-relative">
+                <button class="btn btn-sm position-absolute bibtex-copy-btn py-0" onclick="copyBibtex('bibtex-c-5')">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+                <pre id="bibtex-c-5" class="p-3 mb-0 text-left">
+@inproceedings{mia2025federated,
+  author    = {Mia, N. and Nabin, J. A. and Mohammad, S. and Hasan, Mahedi and Tamim, F. S. and Das, D. Mohon},
+  title     = {Federated Deep Learning for Cybersecurity and Intrusion Detection in Decentralized Networks},
+  booktitle = {Proceedings of the 2025 3rd International Conference on Advancements in Electrical, Electronics, Communication, Computing and Automation (ICAECA)},
+  year      = {2025},
+  pages     = {1--6},
+  doi       = {10.1109/ICAECA63854.2025.11012607}
+}</pre>
+              </div>
+            </p>
+          </li>
 
-  <!-- BibTeX content -->
-  <pre id="bibtex-bc-1" class="p-3 mb-0 text-left">
-@article{lorem2024ipsum,
-  author    = {Lorem Ipsum and Dolor Sit and Amet Consectetur},
-  title     = {Lorem Ipsum Dolor Sit Amet: Consectetur Adipiscing Elit},
-  journal   = {Journal of Placeholder Studies},
-  year      = {2024},
-  volume    = {42},
-  number    = {7},
-  pages     = {123--145},
-  month     = jul,
-  doi       = {10.1234/lorem.ipsum.2024.007},
-  url       = {https://example.com/lorem-ipsum-article}
-}
+          <!-- C6 -->
+          <li class="pl-2 text-left mb-3">
+            <span class="ref-journal">[IEEE ICCIT] </span>
+            F. Z. Nishat, S. Islam, J. F. Raisa, M. U. Ahmed, and <span class="ref-author-lemos">MAHEDI HASAN</span>.
+            <span><a href="https://doi.org/10.1109/ICCIT68739.2025.11489545" target="_blank">"Comparing Deep Learning Frameworks for Air Quality Index (AQI) Prediction in Bangladesh: Static vs. Year-Wise Forecasting Evaluation".</a></span>
+            <i>Proceedings of the 28th International Conference on Computer and Information Technology (ICCIT)</i>, Cox’s Bazar, Bangladesh, 2025, pp. 1148–1153. DOI: 10.1109/ICCIT68739.2025.11489545
+            <p class="mt-2">
+              <button type="button" class="btn btn-blue btn-sm"><a href="https://doi.org/10.1109/ICCIT68739.2025.11489545" target="_blank">IEEE Xplore <i class="ml-1 fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="ml-1 btn btn-blue btn-sm" type="button" data-toggle="collapse" data-target="#collapseBibtex-c-6" aria-expanded="false">
+                BibTeX <i class="ml-1 fa-solid fa-quote-right"></i>
+              </button>
+              <div id="collapseBibtex-c-6" class="collapse mt-2 mb-0 bibtex-card position-relative">
+                <button class="btn btn-sm position-absolute bibtex-copy-btn py-0" onclick="copyBibtex('bibtex-c-6')">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+                <pre id="bibtex-c-6" class="p-3 mb-0 text-left">
+@inproceedings{nishat2025aqi,
+  author    = {Nishat, F. Z. and Islam, S. and Raisa, J. F. and Ahmed, M. U. and Hasan, Mahedi},
+  title     = {Comparing Deep Learning Frameworks for Air Quality Index (AQI) Prediction in Bangladesh: Static vs. Year-Wise Forecasting Evaluation},
+  booktitle = {Proceedings of the 28th International Conference on Computer and Information Technology (ICCIT)},
+  year      = {2025},
+  pages     = {1148--1153},
+  doi       = {10.1109/ICCIT68739.2025.11489545}
+}</pre>
+              </div>
+            </p>
+          </li>
 
-</pre>
-                        </div>
-</p>
-                    </li>
+          <!-- C7 -->
+          <li class="pl-2 text-left mb-3">
+            <span class="ref-journal">[IEEE QPAIN] </span>
+            F. S. Tamim, Z. S. Taheri, <span class="ref-author-lemos">MAHEDI HASAN</span>, M. S. Arefin, and A. W. Reza.
+            <span><a href="https://doi.org/10.1109/QPAIN66474.2025.11171825" target="_blank">"Association Rule Mining for Analyzing User Listening Patterns and Performance".</a></span>
+            <i>Proceedings of the 2025 International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN)</i>, Rangpur, Bangladesh, 2025, pp. 1–6. DOI: 10.1109/QPAIN66474.2025.11171825
+            <p class="mt-2">
+              <button type="button" class="btn btn-blue btn-sm"><a href="https://doi.org/10.1109/QPAIN66474.2025.11171825" target="_blank">IEEE Xplore <i class="ml-1 fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="ml-1 btn btn-blue btn-sm" type="button" data-toggle="collapse" data-target="#collapseBibtex-c-7" aria-expanded="false">
+                BibTeX <i class="ml-1 fa-solid fa-quote-right"></i>
+              </button>
+              <div id="collapseBibtex-c-7" class="collapse mt-2 mb-0 bibtex-card position-relative">
+                <button class="btn btn-sm position-absolute bibtex-copy-btn py-0" onclick="copyBibtex('bibtex-c-7')">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+                <pre id="bibtex-c-7" class="p-3 mb-0 text-left">
+@inproceedings{tamim2025association,
+  author    = {Tamim, F. S. and Taheri, Z. S. and Hasan, Mahedi and Arefin, M. S. and Reza, A. W.},
+  title     = {Association Rule Mining for Analyzing User Listening Patterns and Performance},
+  booktitle = {Proceedings of the 2025 International Conference on Quantum Photonics, Artificial Intelligence, and Networking (QPAIN)},
+  year      = {2025},
+  pages     = {1--6},
+  doi       = {10.1109/QPAIN66474.2025.11171825}
+}</pre>
+              </div>
+            </p>
+          </li>
 
-                </ol>
-            </div>
+          <!-- C8 -->
+          <li class="pl-2 text-left mb-3">
+            <span class="ref-journal">[IEEE QPAIN] </span>
+            N. Tabassum, S. S. Jese, <span class="ref-author-lemos">MAHEDI HASAN</span>, and M. Tasnim.
+            <span><a href="https://doi.org/10.1109/QPAIN69676.2026.11546199" target="_blank">"Multi-Architecture Comparative Framework for Bangla Sign Language Classification Using CNN and Transformer Models".</a></span>
+            <i>2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence & Networking (QPAIN)</i>, Chittagong, Bangladesh, 2026, pp. 1–6. DOI: 10.1109/QPAIN69676.2026.11546199
+            <p class="mt-2">
+              <button type="button" class="btn btn-blue btn-sm"><a href="https://doi.org/10.1109/QPAIN69676.2026.11546199" target="_blank">IEEE Xplore <i class="ml-1 fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="ml-1 btn btn-blue btn-sm" type="button" data-toggle="collapse" data-target="#collapseBibtex-c-8" aria-expanded="false">
+                BibTeX <i class="ml-1 fa-solid fa-quote-right"></i>
+              </button>
+              <div id="collapseBibtex-c-8" class="collapse mt-2 mb-0 bibtex-card position-relative">
+                <button class="btn btn-sm position-absolute bibtex-copy-btn py-0" onclick="copyBibtex('bibtex-c-8')">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+                <pre id="bibtex-c-8" class="p-3 mb-0 text-left">
+@inproceedings{tabassum2026bangla,
+  author    = {Tabassum, N. and Jese, S. S. and Hasan, Mahedi and Tasnim, M.},
+  title     = {Multi-Architecture Comparative Framework for Bangla Sign Language Classification Using CNN and Transformer Models},
+  booktitle = {2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence \& Networking (QPAIN)},
+  year      = {2026},
+  pages     = {1--6},
+  doi       = {10.1109/QPAIN69676.2026.11546199}
+}</pre>
+              </div>
+            </p>
+          </li>
 
-            <h4 class="mt-5">Peer Reviewed Publications</h4>
+          <!-- C9 -->
+          <li class="pl-2 text-left mb-3">
+            <span class="ref-journal">[IEEE QPAIN] </span>
+            P. B. Barua, S. N. Lima, and <span class="ref-author-lemos">MAHEDI HASAN</span>.
+            <span><a href="https://doi.org/10.1109/QPAIN69676.2026.11546280" target="_blank">"Enhanced YOLOv8 with Convolutional Block Attention Module (CBAM) for Real-Time Bangladeshi License Plate Detection".</a></span>
+            <i>2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence & Networking (QPAIN)</i>, Chittagong, Bangladesh, 2026, pp. 1–6. DOI: 10.1109/QPAIN69676.2026.11546280
+            <p class="mt-2">
+              <button type="button" class="btn btn-blue btn-sm"><a href="https://doi.org/10.1109/QPAIN69676.2026.11546280" target="_blank">IEEE Xplore <i class="ml-1 fa-solid fa-arrow-up-right-from-square"></i></a></button>
+              <button class="ml-1 btn btn-blue btn-sm" type="button" data-toggle="collapse" data-target="#collapseBibtex-c-9" aria-expanded="false">
+                BibTeX <i class="ml-1 fa-solid fa-quote-right"></i>
+              </button>
+              <div id="collapseBibtex-c-9" class="collapse mt-2 mb-0 bibtex-card position-relative">
+                <button class="btn btn-sm position-absolute bibtex-copy-btn py-0" onclick="copyBibtex('bibtex-c-9')">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+                <pre id="bibtex-c-9" class="p-3 mb-0 text-left">
+@inproceedings{barua2026yolo,
+  author    = {Barua, P. B. and Lima, S. N. and Hasan, Mahedi},
+  title     = {Enhanced YOLOv8 with Convolutional Block Attention Module (CBAM) for Real-Time Bangladeshi License Plate Detection},
+  booktitle = {2026 IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence \& Networking (QPAIN)},
+  year      = {2026},
+  pages     = {1--6},
+  doi       = {10.1109/QPAIN69676.2026.11546280}
+}</pre>
+              </div>
+            </p>
+          </li>
+        </ol>
+      </div>
 
-            <div class="articles-card p-3">
-                <ol class="pl-3">
-                    <li class="pl-2 text-left">
-                        <span class="ref-journal">[Publisher] </span>Author_1, Author_2, <span
-                            class="ref-author-lemos">MAHEDI HASAN</span>, Author_4, and Author_5.
-                        <span><a href="" target=”_blank”>"Paper Title".</a></span> Venue and other Details. DOI:
-                        10.100x/xxx-xx-xx-xx<span class="pr-2"></span>
-                        <p>
-                        <button type="button" class="btn btn-blue btn-sm"><a href="" target="_blank">PDF <i
-                                    class="ml-1 fa-regular fa-file-pdf"></i></a> </button>
+      <!-- Book Chapters Section -->
+      <h4 class="mt-5">Book Chapters</h4>
+      <div class="articles-card p-3">
+        <ol class="pl-3">
+          <li class="pl-2 text-left">
+            <span class="ref-journal">[Book Chapter] </span>
+            T. Ahammad, <span class="ref-author-lemos">MAHEDI HASAN</span>, M. Hasan, M. Sabir Hossain, A. Hoque, and M. M. Rashid.
+            <span><a href="#" target="_blank">"A New Approach to Solve Job Sequencing Problem Using Dynamic Programming with Reduced Time Complexity".</a></span>
+            <p class="mt-2">
+              <button class="btn btn-blue btn-sm" type="button" data-toggle="collapse" data-target="#collapseBibtex-bc-1" aria-expanded="false">
+                BibTeX <i class="ml-1 fa-solid fa-quote-right"></i>
+              </button>
+              <div id="collapseBibtex-bc-1" class="collapse mt-2 mb-0 bibtex-card position-relative">
+                <button class="btn btn-sm position-absolute bibtex-copy-btn py-0" onclick="copyBibtex('bibtex-bc-1')">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+                <pre id="bibtex-bc-1" class="p-3 mb-0 text-left">
+@incollection{ahammadjobseq,
+  author    = {Ahammad, T. and Hasan, Mahedi and Hasan, M. and Hossain, M. Sabir and Hoque, A. and Rashid, M. M.},
+  title     = {A New Approach to Solve Job Sequencing Problem Using Dynamic Programming with Reduced Time Complexity},
+  booktitle = {Advances in Computer Science Research}
+}</pre>
+              </div>
+            </p>
+          </li>
+        </ol>
+      </div>
 
-
-                                                                                      <!-- BibTeX toggle button -->
-                          <button class="ml-1 btn btn-blue btn-sm" type="button" data-toggle="collapse"
-                                  data-target="#collapseBibtex-prp-1" aria-expanded="false" aria-controls="collapseBibtex-1">
-                            BibTeX <i class="ml-1 fa-solid fa-quote-right"></i>
-                          </button>
-
-                        <!-- BibTeX card -->
-                        <div id="collapseBibtex-prp-1" class="collapse mt-2 mb-0 bibtex-card position-relative">                          
-                          <!-- Copy button (top right) -->
-                          <button class="btn btn-sm position-absolute bibtex-copy-btn py-0" onclick="copyBibtex('bibtex-prp-1')">
-                            <i class="fa-regular fa-copy"></i>
-                          </button>
-
-  <!-- BibTeX content -->
-  <pre id="bibtex-prp-1" class="p-3 mb-0 text-left">
-@article{lorem2024ipsum,
-  author    = {Lorem Ipsum and Dolor Sit and Amet Consectetur},
-  title     = {Lorem Ipsum Dolor Sit Amet: Consectetur Adipiscing Elit},
-  journal   = {Journal of Placeholder Studies},
-  year      = {2024},
-  volume    = {42},
-  number    = {7},
-  pages     = {123--145},
-  month     = jul,
-  doi       = {10.1234/lorem.ipsum.2024.007},
-  url       = {https://example.com/lorem-ipsum-article}
-}
-
-</pre>
-                        </div>
-</p>
-                    </li>
-                </ol>
-            </div>
-
-            <h4 class="mt-5">Pre-Prints & Archives</h4>
-            <div class="articles-card p-3 mb-2">
-                <ol class="pl-3 mb-3">
-                    <li class="pl-2"><span class="ref-journal">[arXiv] </span><span class="ref-author-lemos">Your
-                            Name</span>,
-                        Author_2, and Author_3.<span><a href="" target=”_blank”>"Paper Title".</a></span>
-                        Other Details. DOI: arXiv:2405.xxxxx<span class="pr-2"></span>
-<p>
-                        <button type="button" class="btn btn-blue btn-sm"><a href="" target="_blank">GitHub <i
-                                    class="fa-brands fa-github"></i></a> </button>
-
-                        <button type="button" class="ml-2 btn btn-blue btn-sm"><a href="" target="_blank">PDF <i
-                                    class="ml-1 fa-regular fa-file-pdf"></i></a> </button>
-
-                                                                                      <!-- BibTeX toggle button -->
-                          <button class="ml-1 btn btn-blue btn-sm" type="button" data-toggle="collapse"
-                                  data-target="#collapseBibtex-ppa-1" aria-expanded="false" aria-controls="collapseBibtex-1">
-                            BibTeX <i class="ml-1 fa-solid fa-quote-right"></i>
-                          </button>
-
-                        <!-- BibTeX card -->
-                        <div id="collapseBibtex-ppa-1" class="collapse mt-2 mb-0 bibtex-card position-relative">                          
-                          <!-- Copy button (top right) -->
-                          <button class="btn btn-sm position-absolute bibtex-copy-btn py-0" onclick="copyBibtex('bibtex-ppa-1')">
-                            <i class="fa-regular fa-copy"></i>
-                          </button>
-
-  <!-- BibTeX content -->
-  <pre id="bibtex-ppa-1" class="p-3 mb-0 text-left">
-@article{lorem2024ipsum,
-  author    = {Lorem Ipsum and Dolor Sit and Amet Consectetur},
-  title     = {Lorem Ipsum Dolor Sit Amet: Consectetur Adipiscing Elit},
-  journal   = {Journal of Placeholder Studies},
-  year      = {2024},
-  volume    = {42},
-  number    = {7},
-  pages     = {123--145},
-  month     = jul,
-  doi       = {10.1234/lorem.ipsum.2024.007},
-  url       = {https://example.com/lorem-ipsum-article}
-}
-
-</pre>
-                        </div>
-</p>
-
-                    </li>
-                </ol>
-            </div>
-
-        </div>
-
-        <div id="footer" class="mt-5">
-
-            <footer-component></footer-component>
-            <footer-component-lemos></footer-component-lemos>
-        </div>
     </div>
 
+    <div id="footer" class="mt-5">
+      <footer-component></footer-component>
+      <footer-component-lemos></footer-component-lemos>
+    </div>
+  </div>
 
-
-    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="../assets/vendor/jquery/jquery.slim.min.js"></script>
-    <script src="../assets/vendor/bootstrap/js/popper.min.js"></script>
-    <script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <script src="../assets/js/publications.js"></script>
-    <script src="../components/header.js" type="text/javascript" defer></script>
-    <script src="../components/footer.js" type="text/javascript"></script>
-    <script src="../components/footer-lemos.js" type="text/javascript"></script>
-    <script src="../assets/js/fontawesome651all.min.js" type="text/javascript" defer></script>
-
-
-
-
+  <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="../assets/vendor/jquery/jquery.slim.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/popper.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../assets/js/publications.js"></script>
+  <script src="../components/header.js" type="text/javascript" defer></script>
+  <script src="../components/footer.js" type="text/javascript"></script>
+  <script src="../components/footer-lemos.js" type="text/javascript"></script>
+  <script src="../assets/js/fontawesome651all.min.js" type="text/javascript" defer></script>
 </body>
 
 </html>

@@ -1,93 +1,94 @@
-# academic-portfolio-template-lemos
+# MAHEDI HASAN | Personal Portfolio
 
-<p align="left">
-  <a href="https://ws-dl.blogspot.com/2024/06/2024-06-04-revamp-your-academic.html">
-    <img
-      src="https://img.shields.io/badge/Blog_Post-Read_More-0077B5?style=flat-square&logo=readme&logoColor=white"
-      alt="Blog Post"
-    />
-  </a>
+A personal academic portfolio website for Mahedi Hasan, Lecturer in the Computer Science and Engineering department at IUBAT.
 
-  <a href="https://rochanaro.github.io/template/">
-    <img
-      src="https://img.shields.io/badge/Live_Demo-Try_it_Now-6f42c1?style=flat-square&logo=rocket&logoColor=white"
-      alt="Live Demo"
-    />
-  </a>
-</p>
+This project presents a modern, responsive portfolio with sections for profile information, education, experience, teaching, research, publications, skills, and projects.
 
-This repository contains an elegant and responsive academic portfolio template built using HTML, CSS, JavaScript, and Bootstrap. Designed for students, researchers, and academics, this template allows you to showcase your educational background, research projects, publications, and professional accomplishments in a clean and modern layout.
+## Live Website
+
+- Portfolio: [mahedi55.github.io/myportfolio](https://mahedi55.github.io/myportfolio/)
+
+## Overview
+
+This portfolio is built with plain HTML, CSS, JavaScript, and Bootstrap. It is designed to showcase:
+
+- academic and professional background
+- research interests and publications
+- teaching and project experience
+- contact information and social profiles
+- a clean personal brand for academic work
 
 ## Features
 
-- **Responsive Design**: Ensures optimal viewing experience across various devices including desktops, tablets, and smartphones.
-- **Bootstrap Framework**: Utilizes Bootstrap 4 for a robust, mobile-first layout and easy customization.
-- **Modern Aesthetic**: Clean and professional design to highlight your academic achievements.
-- **Interactive Elements**: JavaScript-powered features for enhanced user interaction.
-- **Ease of Customization**: Simple HTML and CSS structure for straightforward customization to fit your personal style and needs.
+- Responsive layout for desktop, tablet, and mobile devices
+- Bootstrap-based design with a professional academic look
+- Structured sections for education, experience, skills, teaching, and projects
+- Social and contact links for research profiles and professional networking
+- Lightweight static site with no complex build process
 
-## Sections Included
+## Project Structure
 
-- **Home**: A welcoming introduction with a brief overview and personal photo.
-- **Education**: A comprehensive list of your educational qualifications.
-- **Experience**: Detail your professional experience including jobs, internships, and volunteer work.
-- **Skills**: Showcase your technical and soft skills.
-- **Teaching**: Highlight your teaching experience and related activities.
-- **Projects**: Showcase your academic and personal projects.
-- **Publications**: Showcase your published papers, articles, and other scholarly work.
-- **Blogs**: Display your blog posts and articles.
-
-## Screenshots
-> ### Homepage
-> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Homepage.PNG" width="1000"> 
-
-> ### Projects
-> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/projects.PNG" width="1000"> 
-
-> ### Teaching Experience
-> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Teaching.PNG" width="1000"> 
-
-> ### Skills, Education
-> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Skills.PNG" width="380"><span style="margin-left:15px"><img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Education.PNG" width="380"> 
-
-> ### Blogposts, Publications
-> <img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Blogs.PNG" width="380"><span style="margin-left:15px"><img src="https://raw.githubusercontent.com/rochanaro/academic-portfolio-template-lemos/main/assets/img/screenshots/Publications.PNG" width="380"> 
-
+```bash
+.
+├── assets/
+├── components/
+├── favicon_io/
+├── pages/
+├── index.html
+├── README.md
+├── LICENSE
+└── .github/
+```
 
 ## Getting Started
 
-1. **Clone the Repository**
+1. Clone the repository:
+
    ```bash
-   git clone https://github.com/rochanaro/academic-portfolio-template-lemos.git
+   git clone https://github.com/Mahedi55/myportfolio.git
    ```
 
-1. **Navigate to the Project Directory**
+2. Navigate into the project folder:
+
    ```bash
-   cd academic-portfolio-template-lemos
+   cd myportfolio
    ```
 
-2. **Open `index.html` in Your Browser**
-   - Simply open the `index.html` file in your preferred web browser to see the template in action.
+3. Open the site locally:
 
+   - Open `index.html` directly in a browser, or
+   - Run a local web server, for example:
+
+   ```bash
+   python -m http.server 8000
+   ```
+
+   Then visit `http://localhost:8000` in your browser.
 
 ## Customization
-To customize the template, edit the HTML (located in `pages`) and CSS (located in `assets`) files in the project directory. You can modify the structure, style, color theme, and content to fit your personal needs. The template is built with Bootstrap 4, so you can utilize Bootstrap's extensive class library for additional customization.
 
+To personalize the portfolio, edit the relevant files in:
 
-### Read More...
-[Blog Post] https://ws-dl.blogspot.com/2024/06/2024-06-04-revamp-your-academic.html 
+- `index.html` for page structure and content
+- `assets/` for styles, images, and static assets
+- `components/` for reusable UI components such as header/footer
+- `pages/` for additional page content if used in the design
 
+## Sections Included
 
-## Updates / Changelog
+- About Me
+- Education
+- Experience
+- Skills
+- Teaching
+- Projects
+- Publications
+- Blogs / Research Highlights
 
-| Date       | Update/Feature Added                                |
-|------------|-----------------------------------------------------|
-| 2025-09-16 | BibTex button for publications with `copy` option            |
-| 2024-07-19 | Initial release of the template                      |
+## Notes
 
-<br>
-<br>
----
+This repository is a personal portfolio website and is not a reusable template project. The content and branding are tailored to the owner’s academic profile and professional identity.
 
-<b>Rochana R. Obadage</b> <br>
-<i>16th September 2025</i>
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.

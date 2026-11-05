@@ -1,5 +1,4 @@
 .teaching-page { max-width: 1080px !important; }
-.teaching-intro { max-width: 68ch; margin: -.5rem 0 2rem; font-size: 1.08rem; }
 .teaching-appointment, .mentoring-panel, .thesis-supervision { margin-bottom: 1.35rem; padding: clamp(1.3rem, 3vw, 2rem); border: 1px solid var(--line); border-radius: 1rem; background: var(--surface); box-shadow: 0 10px 30px rgba(30, 52, 44, .06); }
 .teaching-appointment { border-top: 4px solid var(--brand); }
 .appointment-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line); }

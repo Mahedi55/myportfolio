@@ -99,6 +99,10 @@ img { max-width: 100%; }
 .home-cv-link .btn { flex: 0 0 auto; }
 .home-page .home-interests-heading { margin: .65rem 0 .3rem; }
 .home-research-interests { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1.2rem; row-gap: .12rem; margin: 0; padding-left: 1.05rem; color: var(--muted); font-size: .9rem; line-height: 1.35; }
+.home-page .home-news-heading { margin: .65rem 0 .25rem; }
+.home-news-list { margin: 0; padding-left: 1.05rem; color: var(--muted); font-size: .88rem; line-height: 1.38; }
+.home-news-list li { margin-bottom: .22rem; }
+.home-news-date { color: var(--brand); font-weight: 700; }
 .home-page .social-icons a .fa-google-scholar, .footer-lemos .footer-icons.fa-google-scholar { color: #4285f4; }
 .home-page .social-icons a .fa-researchgate, .footer-lemos .footer-icons.fa-researchgate { color: #00ccbb; }
 .home-page .social-icons a .fa-orcid, .footer-lemos .footer-icons.fa-orcid { color: #a6ce39; }

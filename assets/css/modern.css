@@ -92,6 +92,10 @@ img { max-width: 100%; }
 .home-page .social-icons a .fa-orcid, .footer-lemos .footer-icons.fa-orcid { color: #a6ce39; }
 .home-page .social-icons a .fa-linkedin, .footer-lemos .footer-icons.fa-linkedin { color: #0a66c2; }
 .home-page .social-icons a .fa-github, .footer-lemos .footer-icons.fa-github { color: #181717; }
+.home-page .social-icons a .profile-location-icon { color: #d93025; }
+.home-page .social-icons a .profile-university-icon { color: #138048; }
+.home-page .social-icons a .profile-website-icon { color: #176b87; }
+.home-page .social-icons a .profile-email-icon { color: #c5221f; }
 .honor-highlight { padding: 1.15rem 1.3rem; border: 1px solid #e4d5c2; border-radius: .75rem; background: linear-gradient(125deg, #fbf5e9 0%, #f6eee1 100%); }
 .honor-kicker { display: block; margin-bottom: .45rem; color: #805325; font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .honor-highlight h3 { color: var(--brand); }

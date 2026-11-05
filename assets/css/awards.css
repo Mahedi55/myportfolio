@@ -1,7 +1,14 @@
 .awards-page { max-width: 1080px !important; }
 .awards-intro { margin: -.4rem 0 2rem; font-size: 1.08rem; }
 .award-card { margin: 0 0 1.2rem; padding: clamp(1.25rem, 3vw, 1.8rem); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: .8rem; background: var(--surface); box-shadow: 0 10px 28px rgba(30, 52, 44, .06); }
-.award-card h2 { margin: 0 0 .45rem; font-size: 1.45rem; }
-.award-type { margin: 0 0 .3rem; color: var(--brand); font-size: .82rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
-.award-affiliation { margin: 0 0 .8rem; color: var(--brand); font-weight: 600; }
+.award-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+.award-card h2 { margin: 0 0 .45rem; font-size: 1.35rem; line-height: 1.35; }
+.award-year { flex: 0 0 auto; margin: 0 0 .45rem; color: var(--ink); font-weight: 600; white-space: nowrap; }
+.award-affiliation { margin: 0 0 .45rem; color: var(--muted); font-style: italic; }
+.award-detail { margin: 0; color: var(--ink); line-height: 1.7; }
 .award-note, .awards-note { margin-top: 1.5rem; color: var(--muted); font-size: .92rem; }
+
+@media (max-width: 640px) {
+  .award-heading { display: block; }
+  .award-year { margin-bottom: .55rem; }
+}

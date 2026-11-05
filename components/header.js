@@ -52,7 +52,7 @@ class Header extends HTMLElement {
       if (linkPage === currentPage) link.setAttribute('aria-current', 'page');
     });
     const markMainContent = () => {
-      const mainContent = document.querySelector('body > .container, #page-container > .container');
+      const mainContent = document.querySelector('main, body > .container, #page-container > .container');
       if (mainContent) {
         mainContent.id = 'main-content';
         mainContent.setAttribute('role', 'main');

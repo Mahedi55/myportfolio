@@ -139,6 +139,42 @@ a:hover {
     color: var(--muted);
 }
 
+.education-documents {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .55rem;
+    margin-top: 1.1rem;
+}
+
+.education-documents-label {
+    margin-right: .2rem;
+    color: var(--ink);
+    font-weight: 700;
+}
+
+.education-document-button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.35rem;
+    padding: .45rem .8rem;
+    border: 1px solid var(--brand);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--brand);
+    font-size: .9rem;
+    font-weight: 600;
+    line-height: 1.25;
+    text-decoration: none;
+    cursor: default;
+}
+
+.education-document-button:hover,
+.education-document-button:focus {
+    color: var(--brand);
+    text-decoration: none;
+}
+
 @media (max-width: 767.98px) {
     .education-results, .education-placeholder-grid { grid-template-columns: 1fr; }
 }

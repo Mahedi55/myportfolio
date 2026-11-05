@@ -125,6 +125,19 @@ img { max-width: 100%; }
 .footer-lemos a, .footer-lemos-nifme a { color: #fff; }
 .footer-icons { color: #e7c69d; }
 
+#page-container > .container:not(.home-page),
+#page-container > main.container:not(.home-page),
+body > .container:not(.home-page),
+body > main.container:not(.home-page) {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0 !important;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 @media (max-width: 991.98px) {
   .navbar { padding-inline: 1rem; }
   .navbar-nav { padding-top: .65rem; }

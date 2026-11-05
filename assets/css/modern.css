@@ -28,12 +28,16 @@ body {
 #page-container { min-height: 100vh; display: flex; flex: 1 0 auto; flex-direction: column; position: relative; }
 #page-container > .container, #page-container > main.container, body > .container, body > main.container { width: 100%; max-width: 1080px; flex: 1 0 auto; padding-top: clamp(2rem, 5vw, 3.8rem); padding-bottom: 4rem; }
 .site-header { position: sticky; top: 0; z-index: 1030; }
-.navbar { min-height: 76px; padding: .8rem max(calc((100vw - 1080px) / 2 + 15px), 15px); background: linear-gradient(112deg, #123a38 0%, #205450 100%); box-shadow: 0 5px 22px rgba(17, 48, 44, .18); }
-.navbar-brand { margin-left: -.75rem; color: #fff !important; font-family: Georgia, 'Times New Roman', serif; font-size: 1.5rem !important; font-weight: 700; letter-spacing: .01em; }
-.navbar-nav { gap: .3rem; }
-.nav-link { color: #e8f0ea !important; font-size: .96rem; border-radius: .4rem; padding: .55rem .7rem !important; transition: background-color .18s ease, color .18s ease; }
-.nav-link:hover, .nav-link[aria-current="page"] { color: #fff !important; background: rgba(255,255,255,.13); }
-.nav-link[aria-current="page"] { box-shadow: inset 0 -2px var(--accent); }
+.navbar { min-height: 74px; padding: .65rem max(calc((100vw - 1080px) / 2 + 15px), 15px); border-bottom: 2px solid rgba(189, 130, 68, .88); background: linear-gradient(112deg, #102f30 0%, #174643 52%, #205450 100%); box-shadow: 0 8px 26px rgba(17, 48, 44, .2); }
+.navbar-brand { display: inline-flex; align-items: center; gap: .6rem; margin-left: -.4rem; color: #fff !important; font-family: Georgia, 'Times New Roman', serif; font-size: 1.36rem !important; font-weight: 700; letter-spacing: .01em; text-decoration: none !important; white-space: nowrap; }
+.navbar-brand::before { display: inline-grid; width: 2rem; height: 2rem; place-items: center; border: 1px solid rgba(232, 195, 140, .9); border-radius: 50%; background: rgba(255, 255, 255, .07); color: #f1c98f; content: 'M'; font-size: 1rem; line-height: 1; }
+.navbar-nav { gap: .15rem; }
+.navbar-nav .nav-item { margin-right: .1rem !important; }
+.nav-link { color: #e8f0ea !important; font-size: .91rem; border: 1px solid transparent; border-radius: 999px; padding: .48rem .62rem !important; transition: background-color .18s ease, color .18s ease, border-color .18s ease; }
+.nav-link:hover { color: #fff !important; border-color: rgba(255, 255, 255, .12); background: rgba(255,255,255,.09); }
+.nav-link[aria-current="page"] { color: #fff !important; border-color: rgba(232, 195, 140, .42); background: rgba(255,255,255,.12); box-shadow: inset 0 -2px var(--accent); }
+.navbar-toggler { padding: .42rem .62rem; border: 1px solid rgba(232, 195, 140, .62); border-radius: .6rem; }
+.navbar-toggler:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
 .skip-link { position: fixed; left: 1rem; top: -5rem; z-index: 2000; padding: .6rem 1rem; background: var(--surface); color: var(--brand); border: 2px solid var(--focus); border-radius: .4rem; }
 .skip-link:focus { top: 1rem; }
 
@@ -144,10 +148,15 @@ body > main.container:not(.home-page) {
 
 @media (max-width: 1199.98px) {
   .navbar { padding-inline: 1rem; }
-  .navbar-nav { padding-top: .65rem; }
-  .nav-link { padding-inline: .75rem !important; }
-  .navbar-nav .nav-item { margin-right: 0 !important; }
-  .navbar-brand { margin-left: -.5rem; }
+  .navbar-brand { margin-left: -.4rem; font-size: 1.24rem !important; }
+  .navbar-brand::before { width: 1.85rem; height: 1.85rem; }
+  .nav-link { padding-inline: .42rem !important; font-size: .86rem; }
+}
+@media (max-width: 991.98px) {
+  .navbar-nav { gap: .1rem; padding-top: .5rem; }
+  .navbar-nav .nav-item { margin: 0 !important; }
+  .nav-link { display: block; padding: .6rem .8rem !important; border-radius: .55rem; font-size: .94rem; }
+  .navbar-collapse { padding-bottom: .35rem; }
 }
 @media (max-width: 575.98px) {
   .home-research-interests { grid-template-columns: 1fr; }
@@ -156,7 +165,8 @@ body > main.container:not(.home-page) {
   body { font-size: .98rem; }
   #page-container > .container, #page-container > main.container, body > .container, body > main.container { padding-top: 1.5rem; }
   .card-body { padding: 1rem; }
-  .navbar-brand { font-size: clamp(1.15rem, 5vw, 1.4rem) !important; }
+  .navbar-brand { gap: .45rem; font-size: clamp(1.05rem, 5vw, 1.24rem) !important; }
+  .navbar-brand::before { width: 1.7rem; height: 1.7rem; font-size: .9rem; }
   .social-icons li a { display: inline-flex; align-items: center; min-height: 42px; }
   .home-page .social-icons li:first-child a { white-space: normal; }
   .home-page > .row > .col-lg-4, .home-page > .row > .col-lg-8 { padding-inline: .5rem; }

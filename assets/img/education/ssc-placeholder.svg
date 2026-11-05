@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 180" role="img" aria-labelledby="title">
+  <title id="title">SSC logo placeholder</title>
+  <path d="M80 8 143 31v48c0 43-25 72-63 93C42 151 17 122 17 79V31z" fill="#f7f3e9" stroke="#c7833f" stroke-width="5"/>
+  <path d="M80 29 124 45v34c0 30-16 51-44 68-28-17-44-38-44-68V45z" fill="#174b46"/>
+  <text x="80" y="91" fill="#fff" font-family="Arial,sans-serif" font-size="23" font-weight="700" text-anchor="middle">SSC</text>
+  <text x="80" y="113" fill="#f1c27b" font-family="Arial,sans-serif" font-size="9" letter-spacing="1" text-anchor="middle">ADD LOGO</text>
+</svg>

@@ -99,8 +99,48 @@ a:hover {
     font-weight: 600;
 }
 
+.education-section-heading {
+    margin: 2.3rem 0 1rem;
+    padding-left: .8rem;
+    border-left: 3px solid var(--accent);
+    font-size: 1.55rem;
+}
+
+.education-level-card h3 {
+    margin: 0 0 1rem;
+    color: var(--brand);
+}
+
+.education-placeholder-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .75rem 1rem;
+    margin: 0;
+}
+
+.education-placeholder-grid > div {
+    padding: .75rem .9rem;
+    border: 1px solid var(--line);
+    border-radius: .6rem;
+    background: var(--surface-tint);
+}
+
+.education-placeholder-grid dt {
+    margin-bottom: .15rem;
+    color: var(--brand);
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+
+.education-placeholder-grid dd {
+    margin: 0;
+    color: var(--muted);
+}
+
 @media (max-width: 767.98px) {
-    .education-results { grid-template-columns: 1fr; }
+    .education-results, .education-placeholder-grid { grid-template-columns: 1fr; }
 }
 
 .img-lemos{

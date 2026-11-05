@@ -33,9 +33,12 @@
 .thesis-card .thesis-outcome { margin-bottom: 0; color: var(--brand); font-weight: 600; }
 .thesis-card .thesis-metrics { padding: .65rem .8rem; border-radius: .6rem; background: var(--surface-tint); color: var(--ink); }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .teaching-columns { grid-template-columns: 1fr; gap: 1.2rem; }
+  .teaching-appointment .teaching-columns > section:first-child > ul > li { text-align: left; }
   .course-table { min-width: 620px; }
+  .thesis-title-row { display: block; }
+  .thesis-period { display: block; margin-bottom: .5rem; }
 }
 @media (max-width: 575.98px) {
   .teaching-appointment, .mentoring-panel { padding: 1.1rem; border-radius: .8rem; }

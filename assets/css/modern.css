@@ -138,10 +138,12 @@ body > main.container:not(.home-page) {
   padding-bottom: 1.5rem;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .navbar { padding-inline: 1rem; }
   .navbar-nav { padding-top: .65rem; }
   .nav-link { padding-inline: .75rem !important; }
+  .navbar-nav .nav-item { margin-right: 0 !important; }
+  .navbar-brand { margin-left: -.5rem; }
 }
 @media (max-width: 575.98px) {
   .home-research-interests { grid-template-columns: 1fr; }
@@ -151,6 +153,7 @@ body > main.container:not(.home-page) {
   #page-container > .container, #page-container > main.container, body > .container, body > main.container { padding-top: 1.5rem; }
   .card-body { padding: 1rem; }
   .social-icons li a { display: inline-flex; align-items: center; min-height: 42px; }
+  .home-page .social-icons li:first-child a { white-space: normal; }
   .home-page > .row > .col-lg-4, .home-page > .row > .col-lg-8 { padding-inline: .5rem; }
   .home-page > .row > .col-lg-8 { margin-top: 1rem; }
   .text-justify { text-align: left !important; hyphens: manual; }
@@ -166,6 +169,12 @@ body > main.container:not(.home-page) {
 }
 @media (max-width: 991.98px) {
   .home-page > .row > .col-lg-8 { margin-top: 1rem; }
+}
+@media (max-width: 767.98px) {
+  .home-page .profile-photo { width: 34%; }
+  .home-page > .row > .col-lg-4 > div,
+  .home-page > .row > .col-lg-8 > div { padding: 1rem; }
+  .home-cv-link { align-items: flex-start; flex-direction: column; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

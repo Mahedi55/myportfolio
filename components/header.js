@@ -10,7 +10,7 @@ class Header extends HTMLElement {
     this.innerHTML = `
       <a class="skip-link" href="#main-content">Skip to content</a>
       <header class="site-header">
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="Main navigation">
+        <nav class="navbar navbar-expand-xl navbar-dark sticky-top" aria-label="Main navigation">
           <a class="navbar-brand" href="${rootPath}index.html">Mahedi Hasan</a>
           <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

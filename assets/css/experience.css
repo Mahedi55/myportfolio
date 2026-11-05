@@ -177,3 +177,10 @@ a:hover {
       }
   }
 
+  @media (max-width: 575.98px) {
+      .card-body > .row { row-gap: .75rem; }
+      .institution-logo { width: 104px; height: 104px; }
+      .responsive-text { font-size: 1.1rem; }
+      .designation-lemos { font-size: 1.05rem; }
+  }
+

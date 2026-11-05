@@ -131,6 +131,8 @@ button > a:hover{
 .project-references > span { color: var(--ink); font-weight: 700; }
 .project-reference-button { display: inline-flex; align-items: center; padding: .42rem .8rem; border: 1px solid var(--brand); border-radius: .45rem; background: var(--brand); color: #fff; font-size: .9rem; font-weight: 600; }
 .project-reference-button:hover, .project-reference-button:focus { background: var(--brand-hover); color: #fff; }
+.project-reference-placeholder { opacity: .58; cursor: default; }
+.project-reference-placeholder:hover, .project-reference-placeholder:focus { background: var(--brand); color: #fff; }
 
 @media (max-width: 767.98px) {
     .project-logo { width: 92px; height: 92px; }

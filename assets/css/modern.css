@@ -97,6 +97,8 @@ img { max-width: 100%; }
 .home-cv-link { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: .45rem; }
 .home-cv-link h2 { margin: 0; }
 .home-cv-link .btn { flex: 0 0 auto; }
+.home-page .home-interests-heading { margin: .65rem 0 .3rem; }
+.home-research-interests { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1.2rem; row-gap: .12rem; margin: 0; padding-left: 1.05rem; color: var(--muted); font-size: .9rem; line-height: 1.35; }
 .home-page .social-icons a .fa-google-scholar, .footer-lemos .footer-icons.fa-google-scholar { color: #4285f4; }
 .home-page .social-icons a .fa-researchgate, .footer-lemos .footer-icons.fa-researchgate { color: #00ccbb; }
 .home-page .social-icons a .fa-orcid, .footer-lemos .footer-icons.fa-orcid { color: #a6ce39; }
@@ -123,6 +125,9 @@ img { max-width: 100%; }
   .navbar { padding-inline: 1rem; }
   .navbar-nav { padding-top: .65rem; }
   .nav-link { padding-inline: .75rem !important; }
+}
+@media (max-width: 575.98px) {
+  .home-research-interests { grid-template-columns: 1fr; }
 }
 @media (max-width: 575.98px) {
   body { font-size: .98rem; }

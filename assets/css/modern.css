@@ -78,6 +78,9 @@ img { max-width: 100%; }
 .home-page > .row > .col-sm-8 > div { padding: clamp(1.3rem, 3vw, 2.2rem); border: 1px solid var(--line); border-radius: 1rem; background: rgba(255,254,250,.86); box-shadow: 0 12px 32px rgba(30, 52, 44, .045); }
 .home-page h2 { padding-left: .8rem; border-left: 3px solid var(--accent); }
 .home-page .mb-4.text-justify { font-size: 1.04rem; }
+.honor-highlight { padding: 1.15rem 1.3rem; border: 1px solid #e4d5c2; border-radius: .75rem; background: linear-gradient(125deg, #fbf5e9 0%, #f6eee1 100%); }
+.honor-kicker { display: block; margin-bottom: .45rem; color: #805325; font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.honor-highlight h3 { color: var(--brand); }
 
 #footer { position: static; width: 100%; height: auto; margin-top: auto; }
 .footer-lemos, .footer-lemos-nifme { position: static; background: #123a38; }

@@ -143,7 +143,7 @@ img { max-width: 100%; }
   .text-justify { text-align: left !important; hyphens: manual; }
 }
 @media (min-width: 992px) {
-  #page-container > .container.home-page { max-width: 1160px; margin-top: 0 !important; padding-top: .75rem; padding-bottom: .75rem; }
+  #page-container > .container.home-page { max-width: 1160px; margin-top: 0 !important; padding-top: 1.25rem; padding-bottom: .75rem; }
 }
 @media (max-width: 991.98px) {
   #page-container > .container.home-page { padding-top: 1rem; padding-bottom: 1rem; }

@@ -69,6 +69,10 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline
 .bibtex-card { max-width: 100%; overflow-x: auto; border: 1px solid var(--line); border-radius: .55rem; background: var(--surface-tint); }
 pre { white-space: pre-wrap; overflow-wrap: anywhere; color: var(--ink); }
 img { max-width: 100%; }
+img, svg, video { height: auto; }
+.container, .row, .card, .card-body, .teaching-columns > *, .project-content { min-width: 0; }
+.row > [class*="col-"] { min-width: 0; }
+.table-responsive { max-width: 100%; -webkit-overflow-scrolling: touch; }
 .social-icons { padding-left: 0; }
 .social-icons li { margin: .4rem 0; padding-left: 0 !important; }
 .profile-photo { width: 60%; max-width: 250px; border: 4px solid var(--surface); outline: 2px solid var(--accent); box-shadow: 0 12px 30px rgba(21, 63, 60, .18); }
@@ -152,6 +156,7 @@ body > main.container:not(.home-page) {
   body { font-size: .98rem; }
   #page-container > .container, #page-container > main.container, body > .container, body > main.container { padding-top: 1.5rem; }
   .card-body { padding: 1rem; }
+  .navbar-brand { font-size: clamp(1.15rem, 5vw, 1.4rem) !important; }
   .social-icons li a { display: inline-flex; align-items: center; min-height: 42px; }
   .home-page .social-icons li:first-child a { white-space: normal; }
   .home-page > .row > .col-lg-4, .home-page > .row > .col-lg-8 { padding-inline: .5rem; }

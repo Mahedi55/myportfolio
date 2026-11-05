@@ -108,3 +108,13 @@ a:hover {
   background-color: var(--light-gray);
   border: 1px solid var(--blue-medium);
 }
+
+.articles-card li { overflow-wrap: anywhere; }
+.articles-card .btn { white-space: normal; }
+
+@media (max-width: 575.98px) {
+  .articles-card { padding: .9rem !important; }
+  .articles-card ol { padding-left: 1.15rem !important; }
+  .bibtex-card pre { padding-top: 2.8rem !important; font-size: .78rem; }
+  .bibtex-copy-btn { min-width: 2.5rem; min-height: 2.5rem; }
+}

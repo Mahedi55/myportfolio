@@ -1,4 +1,4 @@
-.teaching-page { max-width: 1100px !important; }
+.teaching-page { max-width: 1080px !important; }
 .teaching-intro { max-width: 68ch; margin: -.5rem 0 2rem; font-size: 1.08rem; }
 .teaching-appointment, .mentoring-panel { margin-bottom: 1.35rem; padding: clamp(1.3rem, 3vw, 2rem); border: 1px solid var(--line); border-radius: 1rem; background: var(--surface); box-shadow: 0 10px 30px rgba(30, 52, 44, .06); }
 .teaching-appointment { border-top: 4px solid var(--brand); }
@@ -15,9 +15,12 @@
 .course-table td, .course-table th { vertical-align: top; border-color: var(--line); }
 .course-table tbody th { color: var(--brand); white-space: nowrap; }
 .course-table tbody tr:hover { background: #f7f6f0; }
+.term-list { margin: 0; padding-left: 1.1rem; }
+.term-list li { margin: .08rem 0; }
 .additional-courses-title { margin: 1.1rem 0 .4rem; font-family: 'Ubuntu Sans', system-ui, sans-serif; font-size: 1rem; }
+.additional-courses-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .1rem 1.4rem; margin: 0; padding-left: 1.15rem; }
 .course-record > p { color: var(--muted); }
-.mentoring-panel { border-left: 4px solid var(--accent); background: linear-gradient(135deg, #fffefa 0%, #f5f0e7 100%); }
+.mentoring-panel { border-left: 4px solid var(--accent); background: var(--surface); }
 .mentoring-heading { padding-bottom: .9rem; border-bottom: 1px solid var(--line); }
 
 @media (max-width: 767.98px) {

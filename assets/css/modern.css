@@ -45,13 +45,17 @@ p { color: var(--muted); }
 a { color: #17635c; text-underline-offset: .18em; }
 a:hover { color: var(--brand-hover) !important; text-decoration: underline !important; }
 a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
-.text-justify { text-align: left !important; }
+.text-justify { text-align: justify !important; text-justify: inter-word; hyphens: manual; }
 
 #main-content > h1 { position: relative; padding: 0 0 1rem; margin: 0 0 1.8rem; border-bottom: 1px solid var(--line); }
 #main-content > h1::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 4.25rem; height: 3px; border-radius: 2px; background: var(--accent); }
 .card, .articles-card, .icon-box { border: 1px solid var(--line); border-radius: .9rem; background: var(--surface); box-shadow: 0 10px 30px rgba(30, 52, 44, .065); }
 .card { margin-bottom: 1.15rem; overflow: hidden; transition: transform .18s ease, box-shadow .18s ease; }
 .card:hover { transform: translateY(-2px); box-shadow: 0 15px 34px rgba(30, 52, 44, .11); }
+.award-card, .skill-row, .teaching-appointment, .mentoring-panel { background-color: var(--surface); }
+.container > h1, main.container > h1 { margin-bottom: 1.2rem; }
+.container > h1 + p, main.container > h1 + p { max-width: 72ch; }
+.container > .card, .container > .articles-card { margin-top: 1rem; }
 .card-body { padding: clamp(1.25rem, 3vw, 1.8rem); }
 .card-title { color: var(--ink); }
 .small-lemos { color: var(--muted); }
@@ -73,11 +77,16 @@ img { max-width: 100%; }
 .social-icons a .fa-fw { color: var(--accent); }
 .icon-box img { max-width: min(160px, 100%); max-height: 56px; object-fit: contain; margin: .4rem .75rem .4rem 0; }
 
-.home-page > .row { align-items: flex-start; }
-.home-page > .row > .col-sm-4 > div { height: 100%; padding: 1.6rem 1.3rem; border: 1px solid var(--line); border-radius: 1rem; background: var(--surface); box-shadow: 0 12px 32px rgba(30, 52, 44, .07); }
-.home-page > .row > .col-sm-8 > div { padding: clamp(1.3rem, 3vw, 2.2rem); border: 1px solid var(--line); border-radius: 1rem; background: rgba(255,254,250,.86); box-shadow: 0 12px 32px rgba(30, 52, 44, .045); }
+.home-page > .row { align-items: stretch; }
+.home-page > .row > .col-lg-4 > div { height: 100%; padding: 1.6rem 1.3rem; border: 1px solid var(--line); border-radius: 1rem; background: var(--surface); box-shadow: 0 12px 32px rgba(30, 52, 44, .07); }
+.home-page > .row > .col-lg-8 > div { padding: clamp(1.3rem, 3vw, 2.2rem); border: 1px solid var(--line); border-radius: 1rem; background: var(--surface); box-shadow: 0 12px 32px rgba(30, 52, 44, .045); }
 .home-page h2 { padding-left: .8rem; border-left: 3px solid var(--accent); }
-.home-page .mb-4.text-justify { font-size: 1.04rem; }
+.home-page .mb-4.text-justify { max-width: 100%; font-size: 1.04rem; line-height: 1.82; }
+.home-page .social-icons { list-style: none; margin: 1.3rem 0 0; padding: 0; }
+.home-page .social-icons li { margin: .35rem 0; }
+.home-page .social-icons a { display: inline-flex; align-items: baseline; gap: .3rem; }
+.home-page .social-icons li:first-child a { white-space: nowrap; }
+.home-page .social-icons a i { width: 1.25rem; margin-right: .25rem !important; }
 .honor-highlight { padding: 1.15rem 1.3rem; border: 1px solid #e4d5c2; border-radius: .75rem; background: linear-gradient(125deg, #fbf5e9 0%, #f6eee1 100%); }
 .honor-kicker { display: block; margin-bottom: .45rem; color: #805325; font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .honor-highlight h3 { color: var(--brand); }
@@ -101,8 +110,12 @@ img { max-width: 100%; }
   #page-container > .container, #page-container > main.container, body > .container, body > main.container { padding-top: 1.5rem; }
   .card-body { padding: 1rem; }
   .social-icons li a { display: inline-flex; align-items: center; min-height: 42px; }
-  .home-page > .row > .col-sm-4, .home-page > .row > .col-sm-8 { padding-inline: .5rem; }
-  .home-page > .row > .col-sm-8 { margin-top: 1rem; }
+  .home-page > .row > .col-lg-4, .home-page > .row > .col-lg-8 { padding-inline: .5rem; }
+  .home-page > .row > .col-lg-8 { margin-top: 1rem; }
+  .text-justify { text-align: left !important; hyphens: manual; }
+}
+@media (max-width: 991.98px) {
+  .home-page > .row > .col-lg-8 { margin-top: 1rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

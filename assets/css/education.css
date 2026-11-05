@@ -99,6 +99,22 @@ a:hover {
     font-weight: 600;
 }
 
+.education-extra-details {
+    margin: .9rem 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.education-extra-details summary {
+    padding: .65rem 0;
+    color: var(--brand);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.education-extra-details[open] { padding-bottom: .65rem; }
+.education-extra-details > :not(summary) { margin-top: .65rem; }
+
 .education-section-heading {
     margin: 2.3rem 0 1rem;
     padding-left: .8rem;

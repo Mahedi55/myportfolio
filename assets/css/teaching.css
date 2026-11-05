@@ -10,6 +10,7 @@
 .teaching-columns h3 { margin: 0 0 .65rem; font-family: 'Ubuntu Sans', system-ui, sans-serif; font-size: 1.05rem; }
 .teaching-columns ul { padding-left: 1.2rem; margin-bottom: 0; }
 .teaching-columns li { padding: .18rem 0 .4rem; color: var(--muted); }
+.teaching-appointment .teaching-columns > section:first-child > ul > li { text-align: justify; }
 .course-table { margin-bottom: 1rem; color: var(--ink); font-size: .94rem; }
 .course-table thead th { border-top: 0; border-bottom: 1px solid var(--line); color: var(--brand); font-size: .78rem; letter-spacing: .055em; text-transform: uppercase; }
 .course-table td, .course-table th { vertical-align: top; border-color: var(--line); }

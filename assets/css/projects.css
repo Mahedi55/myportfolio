@@ -115,3 +115,24 @@ button > a:hover{
     color: var(--white-ish) !important;
     text-decoration: none;
 }
+
+.project-card .card-body { padding: clamp(1.1rem, 2.8vw, 1.6rem); }
+.project-card .row { row-gap: 1rem; }
+.project-logo-wrap { display: flex; justify-content: center; }
+.project-logo { width: min(100%, 132px); height: 132px; object-fit: contain; border: 0; border-radius: .45rem; }
+.project-content h2 { margin: 0 0 .45rem; color: var(--ink); font-family: Georgia, 'Times New Roman', serif; font-size: 1.3rem; line-height: 1.4; }
+.project-meta { margin: 0 0 .8rem; color: var(--muted); font-size: .94rem; }
+.project-meta strong { color: var(--brand); }
+.project-description { margin: 0 0 .85rem; color: var(--ink); line-height: 1.75; text-align: justify; }
+.project-tags { display: flex; flex-wrap: wrap; gap: .45rem; margin: 0 0 .9rem; }
+.project-tags span { padding: .3rem .65rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface-tint); color: var(--brand); font-size: .82rem; font-weight: 600; }
+.project-result { margin: 0; color: var(--muted); }
+.project-references { display: flex; flex-wrap: wrap; align-items: center; gap: .55rem; margin-top: .8rem; }
+.project-references > span { color: var(--ink); font-weight: 700; }
+.project-reference-button { display: inline-flex; align-items: center; padding: .42rem .8rem; border: 1px solid var(--brand); border-radius: .45rem; background: var(--brand); color: #fff; font-size: .9rem; font-weight: 600; }
+.project-reference-button:hover, .project-reference-button:focus { background: var(--brand-hover); color: #fff; }
+
+@media (max-width: 767.98px) {
+    .project-logo { width: 92px; height: 92px; }
+    .project-description { text-align: left; }
+}

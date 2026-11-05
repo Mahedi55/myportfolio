@@ -81,6 +81,8 @@ img { max-width: 100%; }
 .honor-highlight { padding: 1.15rem 1.3rem; border: 1px solid #e4d5c2; border-radius: .75rem; background: linear-gradient(125deg, #fbf5e9 0%, #f6eee1 100%); }
 .honor-kicker { display: block; margin-bottom: .45rem; color: #805325; font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .honor-highlight h3 { color: var(--brand); }
+.education-focus-list li { position: relative; padding: .25rem .5rem .25rem 1.2rem; color: var(--muted); }
+.education-focus-list li::before { position: absolute; left: .25rem; color: var(--accent); content: '•'; }
 
 #footer { position: static; width: 100%; height: auto; margin-top: auto; }
 .footer-lemos, .footer-lemos-nifme { position: static; background: #123a38; }

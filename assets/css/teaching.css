@@ -1,6 +1,6 @@
 .teaching-page { max-width: 1080px !important; }
 .teaching-intro { max-width: 68ch; margin: -.5rem 0 2rem; font-size: 1.08rem; }
-.teaching-appointment, .mentoring-panel { margin-bottom: 1.35rem; padding: clamp(1.3rem, 3vw, 2rem); border: 1px solid var(--line); border-radius: 1rem; background: var(--surface); box-shadow: 0 10px 30px rgba(30, 52, 44, .06); }
+.teaching-appointment, .mentoring-panel, .thesis-supervision { margin-bottom: 1.35rem; padding: clamp(1.3rem, 3vw, 2rem); border: 1px solid var(--line); border-radius: 1rem; background: var(--surface); box-shadow: 0 10px 30px rgba(30, 52, 44, .06); }
 .teaching-appointment { border-top: 4px solid var(--brand); }
 .appointment-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
 .appointment-heading h2, .mentoring-heading h2 { margin: .15rem 0 .45rem; font-size: 1.7rem; }
@@ -22,6 +22,19 @@
 .course-record > p { color: var(--muted); }
 .mentoring-panel { border-left: 4px solid var(--accent); background: var(--surface); }
 .mentoring-heading { padding-bottom: .9rem; border-bottom: 1px solid var(--line); }
+.thesis-supervision { border-top: 4px solid var(--accent); }
+.supervision-heading { padding-bottom: .9rem; border-bottom: 1px solid var(--line); }
+.supervision-heading h2 { margin: .15rem 0 .45rem; font-size: 1.7rem; }
+.supervision-heading > p:last-child { margin: 0; color: var(--muted); }
+.thesis-card { padding: 1.2rem 0; border-bottom: 1px solid var(--line); }
+.thesis-card:last-child { padding-bottom: 0; border-bottom: 0; }
+.thesis-title-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+.thesis-title-row h3 { margin: 0 0 .55rem; color: var(--brand); font-family: 'Ubuntu Sans', system-ui, sans-serif; font-size: 1.15rem; line-height: 1.5; }
+.thesis-period { flex: 0 0 auto; color: var(--muted); font-size: .9rem; font-weight: 600; white-space: nowrap; }
+.thesis-card p { margin: 0 0 .55rem; color: var(--muted); line-height: 1.7; }
+.thesis-students strong, .thesis-outcome strong, .thesis-metrics strong { color: var(--ink); }
+.thesis-card .thesis-outcome { margin-bottom: 0; color: var(--brand); font-weight: 600; }
+.thesis-card .thesis-metrics { padding: .65rem .8rem; border-radius: .6rem; background: var(--surface-tint); color: var(--ink); }
 
 @media (max-width: 767.98px) {
   .teaching-columns { grid-template-columns: 1fr; gap: 1.2rem; }
@@ -30,4 +43,8 @@
 @media (max-width: 575.98px) {
   .teaching-appointment, .mentoring-panel { padding: 1.1rem; border-radius: .8rem; }
   .appointment-heading h2, .mentoring-heading h2 { font-size: 1.45rem; }
+  .thesis-supervision { padding: 1.1rem; border-radius: .8rem; }
+  .supervision-heading h2 { font-size: 1.45rem; }
+  .thesis-title-row { display: block; }
+  .thesis-period { display: block; margin-bottom: .5rem; }
 }

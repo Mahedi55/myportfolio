@@ -11,3 +11,6 @@
   .award-heading { display: block; }
   .award-year { margin-bottom: .55rem; }
 }
+.award-documents { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .9rem; }
+.award-document-button { display: inline-flex; align-items: center; justify-content: center; min-height: 2.35rem; padding: .4rem .8rem; border: 1px solid var(--brand); border-radius: 999px; background: var(--surface); color: var(--brand); font-size: .9rem; font-weight: 600; text-decoration: none; cursor: default; }
+.award-document-button:hover, .award-document-button:focus { color: var(--brand); text-decoration: none; }

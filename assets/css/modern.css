@@ -87,11 +87,11 @@ img { max-width: 100%; }
 .home-page .social-icons a { display: inline-flex; align-items: baseline; gap: .3rem; }
 .home-page .social-icons li:first-child a { white-space: nowrap; }
 .home-page .social-icons a i { width: 1.25rem; margin-right: .25rem !important; }
-.home-page .social-icons a i.fa-google-scholar, .footer-lemos .footer-icons.fa-google-scholar { color: #4285f4; }
-.home-page .social-icons a i.fa-researchgate, .footer-lemos .footer-icons.fa-researchgate { color: #00ccbb; }
-.home-page .social-icons a i.fa-orcid, .footer-lemos .footer-icons.fa-orcid { color: #a6ce39; }
-.home-page .social-icons a i.fa-linkedin, .footer-lemos .footer-icons.fa-linkedin { color: #0a66c2; }
-.home-page .social-icons a i.fa-github, .footer-lemos .footer-icons.fa-github { color: #181717; }
+.home-page .social-icons a .fa-google-scholar, .footer-lemos .footer-icons.fa-google-scholar { color: #4285f4; }
+.home-page .social-icons a .fa-researchgate, .footer-lemos .footer-icons.fa-researchgate { color: #00ccbb; }
+.home-page .social-icons a .fa-orcid, .footer-lemos .footer-icons.fa-orcid { color: #a6ce39; }
+.home-page .social-icons a .fa-linkedin, .footer-lemos .footer-icons.fa-linkedin { color: #0a66c2; }
+.home-page .social-icons a .fa-github, .footer-lemos .footer-icons.fa-github { color: #181717; }
 .honor-highlight { padding: 1.15rem 1.3rem; border: 1px solid #e4d5c2; border-radius: .75rem; background: linear-gradient(125deg, #fbf5e9 0%, #f6eee1 100%); }
 .honor-kicker { display: block; margin-bottom: .45rem; color: #805325; font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .honor-highlight h3 { color: var(--brand); }

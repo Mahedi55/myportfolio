@@ -26,7 +26,7 @@ body {
 }
 
 #page-container { min-height: 100vh; display: flex; flex: 1 0 auto; flex-direction: column; position: relative; }
-#page-container > .container, body > .container, body > main.container { width: 100%; max-width: 1080px; flex: 1 0 auto; padding-top: clamp(2rem, 5vw, 3.8rem); padding-bottom: 4rem; }
+#page-container > .container, #page-container > main.container, body > .container, body > main.container { width: 100%; max-width: 1080px; flex: 1 0 auto; padding-top: clamp(2rem, 5vw, 3.8rem); padding-bottom: 4rem; }
 .site-header { position: sticky; top: 0; z-index: 1030; }
 .navbar { min-height: 76px; padding: .8rem max(calc((100vw - 1160px) / 2), 1.5rem); background: linear-gradient(112deg, #123a38 0%, #205450 100%); box-shadow: 0 5px 22px rgba(17, 48, 44, .18); }
 .navbar-brand { color: #fff !important; font-family: Georgia, 'Times New Roman', serif; font-size: 1.5rem !important; font-weight: 700; letter-spacing: .01em; }
@@ -96,7 +96,7 @@ img { max-width: 100%; }
 }
 @media (max-width: 575.98px) {
   body { font-size: .98rem; }
-  #page-container > .container, body > .container, body > main.container { padding-top: 1.5rem; }
+  #page-container > .container, #page-container > main.container, body > .container, body > main.container { padding-top: 1.5rem; }
   .card-body { padding: 1rem; }
   .social-icons li a { display: inline-flex; align-items: center; min-height: 42px; }
   .home-page > .row > .col-sm-4, .home-page > .row > .col-sm-8 { padding-inline: .5rem; }
